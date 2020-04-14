@@ -25,7 +25,9 @@ router.get('/last/:lastName',(req,res)=>{
 //Find single residents
 router.get('/single/:single',(req,res)=>{
     // res.send(`Display single residents`)
-
+    EntryCollection.find({single:req.params.single},(errors,results)=>{
+        errors ? res.send(errors) : res.send(results);
+    })
 })
 
 //Find one resident by first name
