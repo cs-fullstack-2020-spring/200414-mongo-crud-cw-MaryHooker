@@ -8,17 +8,17 @@ router.post('/',(req,res)=>{
 })
 
 //Find multiple residents by last name
-router.get('/:lastName',(req,res)=>{
+router.get('/lastName/:lastName',(req,res)=>{
     res.send(`Display multiple residents by last name`)
 })
 
 //Find single residents
-router.get('/:single',(req,res)=>{
+router.get('/single/:single',(req,res)=>{
     res.send(`Display single residents`)
 })
 
 //Find one resident by first name
-router.get('/:firstName',(req,res)=>{
+router.get('/firstName/:firstName',(req,res)=>{
     res.send(`Display resident by first name`)
 })
 
