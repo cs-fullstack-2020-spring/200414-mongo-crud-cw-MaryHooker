@@ -3,6 +3,10 @@
 [Resource - MDN Mongo Info](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose#Connecting_to_MongoDB) |
 [Resource - Mongoose Methods](https://mongoosejs.com/docs/api/model.html)
 
+### Your endpoints are solid and your schema looks great too. I know you were having some technical issues today but you still made good progress! The endpoint for single residents doesn't need a query param because it's a boolean value and you only want the true values
+
+### Score : 3/5
+
 ### Schema
 Define a Resident Schema with properties :
 - first name (string)
