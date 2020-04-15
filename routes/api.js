@@ -23,9 +23,9 @@ router.get('/last/:lastName',(req,res)=>{
 })
 
 //Find single residents
-router.get('/single/:single',(req,res)=>{
+router.get('/single',(req,res)=>{
     // res.send(`Display single residents`)
-    EntryCollection.find({single:req.params.single},(errors,results)=>{
+    EntryCollection.find({single:true},(errors,results)=>{
         errors ? res.send(errors) : res.send(results);
     })
 })
