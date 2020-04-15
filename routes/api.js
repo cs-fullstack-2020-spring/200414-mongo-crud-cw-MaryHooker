@@ -7,10 +7,10 @@ let EntryCollection = require('../models/EntrySchema');
 
 //Create new resident
 router.post('/',(req,res)=>{
-    // res.send(`Created new resident`)
-    EntryCollection.create(req.body,(errors,results)=>{
-        errors ? res.send(errors) : res.send(results);
-    })
+    res.send(`Created new resident`)
+    // EntryCollection.create(req.body,(errors,results)=>{
+    //     errors ? res.send(errors) : res.send(results);
+    // })
    
 })
 
